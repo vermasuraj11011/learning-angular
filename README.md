@@ -42,3 +42,30 @@ ng g c <component name>
 ## NgModules
 
 An NgModule is a class marked by the @NgModule decorator. @NgModule takes a metadata object that tells Angular how to compile and launch the application. It identifies the module's own components, directives, and pipes, making some of them public, through the exports property, so that external components can use them. @NgModule can also add service providers to the application dependency injectors.
+
+## Data Binding
+
+Data binding is a core concept in Angular and allows you to define communication between a component and the DOM. There are four forms of data binding in Angular:
+
+## Types of Data Binding
+
+- **Interpolation**: {{ value }} - Interpolation is a one-way data binding from the component to the view. It is used to output data from the component to the view.
+- **Property binding**: [property] = "value" - Property binding is a one-way data binding from the component to the view. It is used to set a property of a view element.
+- **Event binding**: (event) = "handler" - Event binding is a one-way data binding from the view to the component. It is used to listen to events raised by the view.
+- **Two-way data binding**: [(ngModel)] = "value" - Two-way data binding is a combination of property binding and event binding. It allows data to flow in both directions.
+
+- **Template reference variables**: #var - Template reference variables are used to get a reference to a DOM element or directive in the template.
+- **NgModel**: NgModel is a directive that implements two-way data binding. It binds the value of an input element to a variable defined in the component.
+- **NgClass**: NgClass is a directive that allows you to add or remove CSS classes dynamically based on the value of an expression.
+- **NgStyle**: NgStyle is a directive that allows you to add or remove CSS styles dynamically based on the value of an expression.
+- **NgFor**: NgFor is a directive that allows you to loop over a collection of data and render a template for each item in the collection.
+- **NgIf**: NgIf is a directive that allows you to conditionally render a template based on the value of an expression.
+- **NgSwitch**: NgSwitch is a directive that allows you to conditionally render a template based on the value of an expression.
+- **NgTemplateOutlet**: NgTemplateOutlet is a directive that allows you to render a template dynamically.
+- **NgContent**: NgContent is a directive that allows you to project content into a component.
+- **ViewChild**: ViewChild is a decorator that allows you to get a reference to a child component or directive in the parent component.
+- **ContentChild**: ContentChild is a decorator that allows you to get a reference to a child component or directive in the parent component's template.
+- **ElementRef**: ElementRef is a class that allows you to get a reference to a DOM element in the component.
+- **Renderer2**: Renderer2 is a class that allows you to manipulate the DOM in a way that is safe and compatible with server-side rendering.
+- **HostListener**: HostListener is a decorator that allows you to listen to events raised by the host element.
+- **HostBinding**: HostBinding is a decorator that allows you to bind a property of the host element to a variable defined in the component.

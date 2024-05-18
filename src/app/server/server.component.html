@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
-    <h1>this is a server module</h1>
-</body>
-</html>
+<!--<h1>-->
+<!--  Server with Id {{ server_id }} is {{ server_status }}-->
+<!--</h1>-->
+
+<p [ngStyle]="{backgroundColor: getColour()}"
+   [ngClass]="{online: server_status==='online'}"
+>Server with Id {{ server_id }} is {{ getServerStatus() }}</p>
+
